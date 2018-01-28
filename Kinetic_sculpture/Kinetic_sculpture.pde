@@ -57,7 +57,11 @@ void draw() {
   createTree();
   
   // create Zinnia Kinetic structure
-  drawZinnia();
+//drawZinniaHalf(int x, int y, int sides, float displacement, float time, float delay, float scale, float mirror, color zinniaColor, int strokeWt)
+  drawZinniaHalf(width/2, height/2-height/8, 12, displacementClockwise, time, 0, 1, 1, 0, 6);
+  drawZinniaHalf(width/2, height/2-height/8, 12, displacementCounterclockwise, time, PI/8, 1, -1, 0, 6);
+  
+  time += 0.016667;
   // Create the Marigold structure
   drawMarigold(int(width/4), int(3*height/5), innerArcRadius, numberSides, widthOfSpikes, startFrontAngle, startBackAngle, color(120, 50, 50), 
     color(120, 40, 40), color(100, 30, 30), color(80, 20, 20), color(60, 15, 15));
