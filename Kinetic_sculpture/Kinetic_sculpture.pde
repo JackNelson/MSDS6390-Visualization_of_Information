@@ -23,16 +23,13 @@ int widthOfSpikes = 8;
 Bird[] birds = new Bird[5];
 
 //Variables for Zinnia structure
-float decayClockwise;
-float decayCounterclockwise;
-float displacementClockwise;
-float displacementCounterclockwise;
-float angularSpeed;
-float time;
-int wavePeriodClockwise;
+float angularSpeed = 0.0174533*30; // 30 degrees/epoch ( deg(0.0174533) = 1 )
+float decay = 0.2; // displacement dampening
+float displacementClockwise; // revolutions per oscillation
+float displacementCounterclockwise; 
+float time; // in seconds
+int wavePeriodClockwise; // numbered oscillation
 int wavePeriodCounterclockwise;
-int x;
-int y;
 
 void setup() {
   fullScreen();
