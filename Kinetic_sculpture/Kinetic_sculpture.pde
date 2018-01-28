@@ -37,14 +37,11 @@ void setup() {
   noFill();
 
   // Initialize variables for Zinnia structure
-  decayClockwise = 0.2;
-  decayCounterclockwise = 0.2;
-  displacementClockwise = 2*TWO_PI;
+  displacementClockwise = 2*TWO_PI; // two revolutions 
   displacementCounterclockwise = 2*TWO_PI;
-  angularSpeed = 0.0174533*30;
   time = 0;
   wavePeriodClockwise = 1;
-  wavePeriodCounterclockwise = 1;
+  wavePeriodCounterclockwise = 1; 
 
   // Initialize bird objects with a random location on the sketch
   for (int i = 0; i < birds.length; i++ ) {
